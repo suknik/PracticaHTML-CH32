@@ -1,0 +1,119 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    
+    --gris: #e1e1e1;
+    --blanco: #fff;
+    --rojo: #d91010;
+    --negro: #000;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10 px*/
+}
+
+*, *:before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Globales **/
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4{
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/** Utilidades **/
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.logo{
+    color: var(--rojo);
+}
+
+.logo__nombre{
+    font-weight: normal;
+}
+
+.logo_bold{
+    font-weight:bold;
+}
+
+header{
+    background-color: var(--negro);
+    height: 15rem;
+
+}
+
+.barra {
+    padding-top: 4rem;
+}
+
+.contenido {
+    background-image: url(../assets/img/HD-wallpaper-bruja-mago-de-oz-metal-rock.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 80rem;
+    position: relative;
+}
+
+.datos {
+    position: absolute;
+    height: 50rem;
+    overflow-y: scroll;
+    width: 65%;
+    background-color: var(--blanco);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    margin: 0 auto;
+    padding: 5rem;
+    border: 5px solid var(--gris);
+}
+
+.biografía {
+    text-align: justify;
+    font-size: small;
+}
+
+.enlace {
+    text-align: center;
+}
